@@ -69,15 +69,8 @@ var style_AearoportsMaroc_2 = function(feature, resolution){
 		];
 	}
     var style = [ new ol.style.Style({
-        image: new ol.style.Icon({
-                  imgSize: [580, 580],
-                  scale: 0.034482758620689655,
-                  anchor: [290.0, 290.0],
-                  anchorXUnits: "pixels",
-                  anchorYUnits: "pixels",
-                  rotation: 0.6981320000000001,
-                  src: "styles/transport_airport2.svg"
-            }),
+        image: new ol.style.Circle({radius: 8.0 + size,
+            displacement: [0, 0], stroke: new ol.style.Stroke({color: 'rgba(50,87,128,1.0)', lineDash: null, lineCap: 'butt', lineJoin: 'miter', width: 1.52}), fill: new ol.style.Fill({color: 'rgba(72,123,182,1.0)'})}),
         text: createTextStyle(feature, resolution, labelText, labelFont,
                               labelFill, placement, bufferColor,
                               bufferWidth, textAlign, offsetX, offsetY, overflow, repeat)

@@ -46,7 +46,7 @@ var lyr_AearoportsMaroc_2 = new ol.layer.Vector({
                 source:cluster_AearoportsMaroc_2, 
                 style: style_AearoportsMaroc_2,
                 popuplayertitle: 'Aearoports Maroc',
-                interactive: true,
+                interactive: false,
                 title: '<img src="styles/legend/AearoportsMaroc_2.png" /> Aearoports Maroc'
             });
 var group_Transports = new ol.layer.Group({
@@ -67,7 +67,7 @@ lyr_LimitesMaroc_0.set('fieldImages', {'OBJECTID': 'TextEdit', });
 lyr_RegionsMaroc_1.set('fieldImages', {'OBJECTID': 'TextEdit', 'CODE_REGIO': 'TextEdit', 'Nom_Region': 'TextEdit', 'Population': 'TextEdit', 'Menages': 'TextEdit', 'Etrangers': 'TextEdit', 'Marocains': 'TextEdit', 'Non_ar': 'TextEdit', });
 lyr_AearoportsMaroc_2.set('fieldImages', {'Nom_fr': 'TextEdit', 'Nom_ar': 'TextEdit', 'iata': 'Hidden', 'Cap': 'TextEdit', });
 lyr_LimitesMaroc_0.set('fieldLabels', {'OBJECTID': 'no label', });
-lyr_RegionsMaroc_1.set('fieldLabels', {'OBJECTID': 'no label', 'CODE_REGIO': 'no label', 'Nom_Region': 'inline label - always visible', 'Population': 'inline label - always visible', 'Menages': 'no label', 'Etrangers': 'no label', 'Marocains': 'no label', 'Non_ar': 'no label', });
+lyr_RegionsMaroc_1.set('fieldLabels', {'OBJECTID': 'inline label - always visible', 'CODE_REGIO': 'no label', 'Nom_Region': 'inline label - always visible', 'Population': 'inline label - always visible', 'Menages': 'no label', 'Etrangers': 'no label', 'Marocains': 'no label', 'Non_ar': 'no label', });
 lyr_AearoportsMaroc_2.set('fieldLabels', {'Nom_fr': 'inline label - always visible', 'Nom_ar': 'inline label - always visible', 'Cap': 'no label', });
 lyr_AearoportsMaroc_2.on('precompose', function(evt) {
     evt.context.globalCompositeOperation = 'normal';
